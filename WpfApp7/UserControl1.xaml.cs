@@ -3,7 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.IO.Ports;
 using System.Windows;
-using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 using System.Windows.Media;
 
@@ -12,10 +11,9 @@ namespace WpfApp7
     /// <summary>
     /// Interaction logic for UserControl1.xaml
     /// </summary>
-    public partial class UserControl1 : UserControl
+    public partial class UserControl1
     {
         private SerialPort _serialPort;
-        readonly List<RepeatButton> _keyButtons;
 
         public UserControl1()
         {
@@ -33,15 +31,14 @@ namespace WpfApp7
                     {
                         Angle = -90
                     }
-
                 };
                 btn.Toggled += Btn_Toggled;
 
                 _ = sp_left.Children.Add(btn);
             }
 
-            _keyButtons = new List<RepeatButton>() { KEY00, KEY01, KEY02, KEY03 };
-            foreach (RepeatButton keybtn in _keyButtons)
+            var keyButtons = new List<RepeatButton>() { KEY00, KEY01, KEY02, KEY03 };
+            foreach (RepeatButton keybtn in keyButtons)
             {
                 keybtn.Click += Keybtn_Click;
             }
@@ -85,7 +82,6 @@ namespace WpfApp7
                 _ = MessageBox.Show("Не удалось открыть порт");
                 throw;
             }
-
         }
     }
 }
