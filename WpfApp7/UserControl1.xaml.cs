@@ -18,7 +18,7 @@ namespace WpfApp7
         public UserControl1()
         {
             InitializeComponent();
-            for (int i = 17; i >= 0; i--)
+            for (int i = 8; i >= 0; i--)
             {
                 ToggleSwitch btn = new ToggleSwitch
                 {

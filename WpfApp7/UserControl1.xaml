@@ -58,8 +58,8 @@
                            Stroke="Black"
                            StrokeThickness="0.7" />
                 <RepeatButton x:Name="KEY03"
-                              Interval="500"
-                              Delay="0"
+                              Interval="100"
+                              Delay="100"
                               UseLayoutRounding="True"
                               HorizontalAlignment="Center"
                               VerticalAlignment="Center"
@@ -98,8 +98,8 @@
                            Stroke="Black"
                            StrokeThickness="0.7" />
                 <RepeatButton x:Name="KEY02"
-                              Interval="500"
-                              Delay="0"
+                              Interval="100"
+                              Delay="100"
                               UseLayoutRounding="True"
                               HorizontalAlignment="Center"
                               VerticalAlignment="Center"
@@ -138,8 +138,8 @@
                            Stroke="Black"
                            StrokeThickness="0.7" />
                 <RepeatButton x:Name="KEY01"
-                              Interval="500"
-                              Delay="0"
+                              Interval="100"
+                              Delay="100"
                               UseLayoutRounding="True"
                               HorizontalAlignment="Center"
                               VerticalAlignment="Center"
@@ -178,8 +178,8 @@
                            Stroke="Black"
                            StrokeThickness="0.7" />
                 <RepeatButton x:Name="KEY00"
-                              Interval="500"
-                              Delay="0"
+                              Interval="100"
+                              Delay="100"
                               UseLayoutRounding="True"
                               HorizontalAlignment="Center"
                               VerticalAlignment="Center"
